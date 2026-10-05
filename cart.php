@@ -66,12 +66,13 @@ $total = 0;
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body style="background: url('http://localhost/ecommerece/images/background.jpg') center center / cover fixed no-repeat;">
 
 <h1>Your Shopping Cart</h1>
 
@@ -161,3 +162,5 @@ if (mysqli_num_rows($result) == 0) {
 
 </body>
 </html>
+
+
