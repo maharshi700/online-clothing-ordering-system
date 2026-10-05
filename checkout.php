@@ -37,7 +37,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 </head>
 
-<body>
+<body style="background: url('http://localhost/ecommerece/images/background.jpg') center center / cover fixed no-repeat;">
 
     <h1>Checkout</h1>
 
