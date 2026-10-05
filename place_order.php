@@ -102,12 +102,13 @@ if (mysqli_query($conn, $order_sql)) {
 
     echo "<!DOCTYPE html>";
     echo "<html>";
+
     echo "<head>";
     echo "<title>Order Placed</title>";
     echo "<link rel='stylesheet' href='css/style.css'>";
     echo "</head>";
 
-    echo "<body>";
+    echo "<body style=\"background: url('http://localhost/ecommerece/images/background.jpg') center center / cover fixed no-repeat;\">";
 
     echo "<h1>Order Placed Successfully!</h1>";
 
@@ -131,4 +132,6 @@ if (mysqli_query($conn, $order_sql)) {
     echo "Unable to place the order.";
 }
 ?>
+
+
 
