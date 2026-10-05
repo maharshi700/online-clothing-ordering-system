@@ -62,7 +62,7 @@ $result = mysqli_query($conn, $sql);
 
 </head>
 
-<body>
+<body style="background: url('http://localhost/ecommerece/images/background.jpg') center center / cover fixed no-repeat;">
 
     <h1>Welcome to Our Clothing Store</h1>
 
@@ -138,6 +138,8 @@ $result = mysqli_query($conn, $sql);
 </body>
 
 </html>
+
+
 
 
 
