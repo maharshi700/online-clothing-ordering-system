@@ -38,48 +38,109 @@ if (isset($_POST['register'])) {
 
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Customer Registration</title>
+
+    <title>Create Account</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
+<body style="background: url('http://localhost/ecommerece/images/background.jpg') center center / cover fixed no-repeat;">
 
-    <h1>Create Account</h1>
+    <div class="auth-page">
 
-    <?php
-    if ($message != "") {
-        echo "<p>$message</p>";
-    }
-    ?>
+        <div class="auth-card register-card">
 
-    <form method="POST">
+            <div class="auth-logo">
+                CLOTHING STORE
+            </div>
 
-        <label>Name:</label><br>
-        <input type="text" name="name" required>
-        <br><br>
+            <h1>Create Account</h1>
 
-        <label>Email:</label><br>
-        <input type="email" name="email" required>
-        <br><br>
+            <p class="auth-subtitle">
+                Join us and start shopping
+            </p>
 
-        <label>Phone:</label><br>
-        <input type="text" name="phone" required>
-        <br><br>
+            <?php
+            if ($message != "") {
+                echo "<div class='success-message'>$message</div>";
+            }
+            ?>
 
-        <label>Password:</label><br>
-        <input type="password" name="password" required>
-        <br><br>
+            <form method="POST">
 
-        <label>Address:</label><br>
-        <textarea name="address" required></textarea>
-        <br><br>
+                <label>Name</label>
 
-        <button type="submit" name="register">
-            Register
-        </button>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
 
-    </form>
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label>Phone</label>
+
+                <input
+                    type="text"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+                <label>Address</label>
+
+                <textarea
+                    name="address"
+                    placeholder="Enter your delivery address"
+                    required
+                ></textarea>
+
+                <button type="submit" name="register">
+                    CREATE ACCOUNT
+                </button>
+
+            </form>
+
+            <p class="auth-bottom">
+
+                Already have an account?
+
+                <a href="login.php">
+                    Login
+                </a>
+
+            </p>
+
+            <a class="back-home" href="index.php">
+                ← Back to Store
+            </a>
+
+        </div>
+
+    </div>
 
 </body>
+
 </html>
+
 
